@@ -8,10 +8,13 @@ namespace DesafioPOO.Models
         private string _imei;
         private int _memoria;
 
-        public Smartphone(string numero)
+        public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
             // TODO: Passar os parâmetros do construtor para as propriedades
+            _modelo = modelo;
+            _imei = imei;
+            _memoria = memoria;
         }
 
         public void Ligar()
